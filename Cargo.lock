@@ -12,6 +12,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "array-init"
+version = "2.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6945cc5422176fc5e602e590c2878d2c2acd9a4fe20a4baa7c28022521698ec6"
+
+[[package]]
 name = "async-trait"
 version = "0.1.52"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -936,6 +942,7 @@ dependencies = [
 name = "sunriseset_parallel"
 version = "0.1.0"
 dependencies = [
+ "array-init",
  "rayon",
  "thirtyfour",
  "tokio",
