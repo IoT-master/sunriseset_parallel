@@ -3,7 +3,7 @@ use thirtyfour::prelude::*;
 use tokio;
 
 fn main() {
-    let arr: [u8; 12] = array_init::array_init(|i: usize| (i) as u8);
+    let arr: [u8; 12] = array_init::array_init(|i: usize| i as u8);
     let results: Vec<Vec<String>> = arr.into_par_iter()
         .map(|month| get_suntimes(month+1, 2022))
         .collect();
