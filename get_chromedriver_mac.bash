@@ -1,0 +1,2 @@
+chrome_driver=$(curl "https://chromedriver.storage.googleapis.com/LATEST_RELEASE")
+curl -Lo chromedriver_linux64.zip "https://chromedriver.storage.googleapis.com/${chrome_driver}/chromedriver_mac64.zip"
